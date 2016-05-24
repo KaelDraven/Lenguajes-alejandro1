@@ -1,0 +1,8 @@
+ class animal {
+    
+    String nombre;
+    {
+
+}
+    
+}
