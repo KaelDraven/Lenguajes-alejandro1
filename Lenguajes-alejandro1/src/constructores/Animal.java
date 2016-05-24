@@ -12,7 +12,7 @@ package constructores;
 public class Animal {
     String nombre;
     String especie;
-    boolean carnivori;
+    boolean carnivoro;
     public Animal(String valor){
         //no lleva nada dentro el constructor solo parentesis y llaves
         nombre=valor;
@@ -23,6 +23,16 @@ public class Animal {
     public Animal(){
     // este es un constructor por defecto
     nombre="Tigre";
+    especie="felino";
+    boolean=true;
     }
  //sobrecarga de constructores, permite personalizar mejor el programa
+    
+    public Animal(String val,String val2){
+     especie=val;
+     nombre=val2;
+    }
+    public Animal(boolean valo){
+    carnivoro=valo;
+    }
 }
