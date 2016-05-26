@@ -24,7 +24,7 @@ public class Animal {
     // este es un constructor por defecto
     nombre="Tigre";
     especie="felino";
-    boolean=true;
+    boolean carnivoro;
     }
  //sobrecarga de constructores, permite personalizar mejor el programa
     
@@ -32,7 +32,11 @@ public class Animal {
      especie=val;
      nombre=val2;
     }
-    public Animal(boolean valo){
-    carnivoro=valo;
+    public Animal(boolean valo,String a,String b){
+    carnivoro=true;
+    especie=a;
+    nombre=b;
     }
+    
+    
 }
