@@ -12,13 +12,13 @@ package metodos;
 public class ProbarUsuario {
     public static void main(String[] args) {
         // creamos un objeto con el constructor de defecto de la clase usuario
+        //en el codigo **main** no debe de haber codigo de programacion ya que se vuelve debil
+        //los atributos necesitan unmetodo mutador 
         Usuario u1=new Usuario();
-        u1.edad=-19;
-        if(u1.edad<0){
-        u1.edad=0;
-            System.out.println("no debes meter edades menores de 0");
-        }
-        System.out.println("tu edad es "+u1.edad);
+        u1.setEdad(19);
+        //u1.edad=-19; <--- MAL (SET** mutador)
+       
+        System.out.println("tu edad es "+u1.getEdad());
         
     }
 }
