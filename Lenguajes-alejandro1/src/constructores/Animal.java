@@ -12,36 +12,44 @@ package constructores;
 public class Animal {
     String nombre;
     String especie;
-    boolean carnivoro;
-    public Animal(String valor){
+    boolean carnivoro;  
+
+    public Animal(String nombre, String especie, boolean carnivoro) {
+        this.nombre = nombre;
+        this.especie = especie;
+        this.carnivoro = carnivoro;
+    }
+
+    public Animal(String nombre, String especie) {
+        this.nombre = nombre;
+        this.especie = especie;
+    }
+
+    public Animal(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public Animal() {
+        
+    }
+    }
+        
+    /*public Animal(String valor){
         //no lleva nada dentro el constructor solo parentesis y llaves
         nombre=valor;
         // pueden existir cualquier cantidad de constructores pero todos necesitan ser diferentes
     
     
     }
+
     public Animal(){
     // este es un constructor por defecto
     nombre="Tigre";
     especie="felino";
     boolean carnivoro;
-    }
+   }
+*/
  //sobrecarga de constructores, permite personalizar mejor el programa
-    
-    public Animal(String nombre, String val2){
-    this.nombre=nombre; 
     //nombre= nombre; con el (String nombre)asignacion ciclica se le podria decir que es una verdad absoluta
-        
-     
-    }
-    public Animal(boolean carnivoro){
-    this.carnivoro=carnivoro;
     
-    }
-    
-    public Animal(boolean valo1,String especie,String nombre){
-    
-    this.especie=especie;
-    this.nombre=nombre;
-    }
-}
+
