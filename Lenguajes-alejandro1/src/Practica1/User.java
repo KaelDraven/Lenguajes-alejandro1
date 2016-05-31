@@ -14,11 +14,13 @@ public class User {
     private int peso;
     private int altura;
     
-    public int getpeso(){
+    public int getPeso(){
     return peso;
     }
     
-    public int getalt(){
+    public int getAlt(){
     return altura;
     }
+
+    
 }

@@ -12,7 +12,9 @@ package Practica1;
 public class Procedimiento {
     public String IMS(User r){
      
-    int ims = r.getpeso()*(r.getalt()*r.getalt());
+    int ims = r.getPeso()*(r.getAlt()*r.getAlt());
     return ""+ims;
     }
+
+    
 }
