@@ -19,6 +19,8 @@ public class ProbarUsuario {
         //u1.edad=-19; <--- MAL (SET** mutador)
        
         System.out.println("tu edad es "+u1.getEdad());
+        OperacionesUsuarios o=new OperacionesUsuarios();
+        System.out.println("tu edad en dias es "+o.calcularEdonDias(u1));
         
     }
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package metodos;
-
+//                                   *******ENCAPSULAMIENTO*******
 /**
  *
  * @author Alejandro
@@ -35,6 +35,10 @@ public class Usuario {
      
     }
     */
+
+    Usuario() {
+       
+    }
 
     /**
      * @return the edad
