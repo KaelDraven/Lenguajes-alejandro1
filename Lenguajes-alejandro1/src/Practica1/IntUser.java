@@ -121,7 +121,8 @@ public class IntUser extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void KGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KGActionPerformed
-      
+         User up=new User();
+         up.setPeso(Integer.parseInt(mts.getText()));
       
       
     
@@ -130,15 +131,12 @@ public class IntUser extends javax.swing.JFrame {
 
     private void mtsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mtsActionPerformed
          User up=new User();
-         up.getAlt(Integer.parseInt(mts.getText()));
+         up.setAlt(Integer.parseInt(mts.getText()));
       // TODO add your handling code here:
     }//GEN-LAST:event_mtsActionPerformed
 
     private void calImsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calImsActionPerformed
-        User up=new User();
-     up.getPeso(Integer.parseInt(KG.getText()));
-        Procedimiento p=new Procedimiento();
-        Masa.setText("tu resultado es "+p.IMS(up));
+
 
 // TODO add your handling code here:
     }//GEN-LAST:event_calImsActionPerformed
