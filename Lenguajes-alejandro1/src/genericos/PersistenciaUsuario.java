@@ -30,6 +30,14 @@ public class PersistenciaUsuario {
         oos.writeObject(Usuarios);
         
     }
+    //empieza el metodo de leer a los usuarios guardados
+    public ArrayList<Usuario> buscartodos()throws Exception{
+    File f=new File("archivalrdo.raton");
+    FileInputStream fis=new FileInputStream(f);
+    ObjectInputStream ois=new ObjectInputStream(fis);
+    Usuarios= (ArrayList<Usuario>) ois.readObject();
+    return Usuarios;
+    }
     }
     
     
