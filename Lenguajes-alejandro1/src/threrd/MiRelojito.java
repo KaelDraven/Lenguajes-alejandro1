@@ -34,6 +34,7 @@ public class MiRelojito extends javax.swing.JFrame {
                     i=i+5;
                     try {
                         Thread.sleep(1000);
+                        //es para que espere un segundo
                     } catch (InterruptedException ex) {
                       
                     }
