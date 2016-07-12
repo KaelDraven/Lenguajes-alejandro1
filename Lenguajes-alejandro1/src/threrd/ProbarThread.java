@@ -16,8 +16,9 @@ public class ProbarThread implements Runnable{
         Runnable r=new ProbarThread();
         Thread t2=new Thread(r);
         t2.start();
+      //clases internas anonimas JAVA ovio XD
     }
     public void run(){
-    
+        System.err.println("");
     }
 }
