@@ -9,12 +9,15 @@ import java.sql.*;
  *
  * @author Alejandro
  */
-//que es el 
+
 public class probarConexion {
     public static void main(String[] args) {
         try{
         
-        Connection con=conexion.conectarse("root",null);
+       // Connection con=conexion.conectarse("root",null);
+       Tablita t=new Tablita("juan",90000f);
+       DAOTablita.guardar(t);
+       
         }catch (Exception e){
         
             System.err.println(e.getMessage());
